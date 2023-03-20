@@ -1,0 +1,137 @@
+#excelente-btn,
+#bueno-btn,
+#regular-btn,
+
+#malo-btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+
+h2{
+  color: #8e00f4;
+  text-align:center;
+}
+
+
+button#excelente-btn {
+  background-image: linear-gradient(135deg
+  ,#0ac800, #4bf400,#ffffff, #4bf400, #0ac800);
+  background-size: 500%;
+  animation: fanimado 5s infinite;
+  }
+  
+  button#bueno-btn {
+    background-image: linear-gradient(135deg
+  ,#e8db0a, #f4ef00,#ffffff, #f4ef00, #e8db0a);
+  background-size: 500%;
+  animation: fanimado 5s infinite;
+  }
+  
+  button#regular-btn {
+    background-image: linear-gradient(135deg
+  ,#e8900a, #f4a900,#ffffff, #f4a900, #e8900a );
+  background-size: 500%;
+  animation: fanimado 5s infinite;
+  }
+  
+  button#malo-btn {
+    background-image: linear-gradient(135deg
+  ,#c80000, #f40000,#ffffff, #f40000, #c80000 );
+  background-size: 500%;
+  animation: fanimado 5s infinite;
+  }
+  
+  
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg
+    ,#df84f4,#62c8e2,#ffffff,#76ffff,#1de6e6,#7ce7cd,#df84f4);
+    background-size: 500%;
+    animation: fanimado 7s infinite;
+
+}
+
+button {
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: linear-gradient(to bottom right, #FF416C, #FF4B2B);
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+
+
+  @keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px; /* ajustar el ancho máximo según tus necesidades */
+}
+
+
+
+
+#resultados {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  height: 80%;
+  max-height: 600px;
+  background-color: #fff;
+  border: 2px solid #000;
+  padding: 20px;
+  overflow: auto;
+}
+#results-container {
+  display: none;
+}
+
+
